@@ -108,7 +108,7 @@ p{margin:0}
 .hero-meta{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 24px;font-size:15px;color:var(--ink-2)}
 .hero-word{font-family:var(--display);font-weight:320;font-size:clamp(92px,22vw,340px);line-height:.86;letter-spacing:-0.045em;margin:12px 0 0;white-space:nowrap;color:var(--ink)}
 .hero-word em{font-style:italic;font-weight:300}
-.hw-mask{padding:0 .02em .26em;margin:0 -.02em -.26em}
+.hw-mask{padding:0 .16em .26em;margin:0 -.16em -.26em}
 .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);gap:clamp(32px,5vw,80px);align-items:start;margin-top:clamp(24px,3vw,40px)}
 .hero-copy{padding-top:8px;max-width:600px}
 .hero-copy .lead{font-family:var(--display);font-weight:380;font-size:clamp(26px,2.5vw,36px);line-height:1.18;letter-spacing:-0.012em;margin-top:16px;text-wrap:balance}
@@ -133,7 +133,7 @@ p{margin:0}
 .big-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 32px;margin-top:clamp(48px,6vw,80px)}
 .big{position:relative;padding:28px 12px 8px 0}
 .big::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:rgba(28,38,32,.22);transform-origin:left center;transform:scaleX(var(--draw,1))}
-.big .n{font-family:var(--display);font-weight:340;font-size:clamp(56px,5.8vw,92px);line-height:.92;letter-spacing:-0.025em}
+.big .n{font-family:var(--display);font-weight:340;font-size:clamp(46px,4.6vw,74px);line-height:.92;letter-spacing:-0.025em}
 .big .t{margin-top:16px;font-size:16px;line-height:1.5;color:var(--ink-2);max-width:26ch}
 .big .n.accent{color:var(--rasp)}
 .bezel{padding:7px;border-radius:32px;background:rgba(28,38,32,.045);box-shadow:0 0 0 1px rgba(28,38,32,.06)}
@@ -200,7 +200,7 @@ p{margin:0}
 .is-horizontal .work-progress i{display:block;height:100%;background:var(--paper);transform:scaleX(0);transform-origin:left center}
 
 /* reach */
-.reach{padding-block:clamp(110px,11vw,160px) clamp(64px,7vw,100px)}
+.reach{padding-block:clamp(64px,7vw,104px) clamp(110px,11vw,160px)}
 .reach-head{max-width:1100px}
 .reach-head .sec-note{margin-top:28px;font-size:18px;max-width:58ch}
 .card-title{margin:0;font-size:18px;font-weight:600;line-height:1.35}
@@ -217,7 +217,7 @@ p{margin:0}
 .bars-note{font-size:14px;color:var(--ink-2)}
 
 /* audience */
-.audience{padding-block:clamp(48px,6vw,88px) clamp(110px,11vw,160px)}
+.audience{padding-block:clamp(110px,11vw,160px) clamp(56px,6vw,88px)}
 .aud-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(40px,6vw,96px);align-items:start;margin-top:clamp(48px,6vw,72px)}
 .aud-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 32px}
 .astat{border-top:1px solid rgba(28,38,32,.2);padding-top:16px}
@@ -258,7 +258,7 @@ p{margin:0}
 .commenters .names{font-family:var(--display);font-weight:340;font-size:clamp(30px,3.6vw,54px);line-height:1.15;letter-spacing:-0.012em}
 
 /* partners */
-.partners{padding-block:clamp(110px,11vw,160px) clamp(80px,8vw,120px);overflow-x:clip}
+.partners{padding-block:clamp(56px,6vw,88px);overflow-x:clip}
 .cases{margin-top:clamp(72px,8vw,112px);display:grid;gap:clamp(24px,5vh,56px);padding-bottom:4vh}
 .case{position:sticky;top:calc(96px + var(--i) * 18px)}
 .case-in{position:relative;padding:7px;border-radius:34px;background:rgba(28,38,32,.05);box-shadow:0 0 0 1px rgba(28,38,32,.06),0 40px 80px -60px rgba(28,38,32,.5);transform-origin:50% 0}
@@ -273,9 +273,6 @@ p{margin:0}
 .case-metric p{margin-top:8px;font-size:15px;color:var(--ink-2)}
 .case-body .ln-arrow{margin-top:22px;font-size:15px;color:var(--ink)}
 .case-shade{position:absolute;inset:0;border-radius:34px;background:var(--ink);opacity:0;pointer-events:none}
-.strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px 40px;margin-top:clamp(48px,6vw,72px)}
-.strip p{font-size:15px;line-height:1.6;color:var(--ink-2)}
-.strip a{font-weight:600;color:var(--ink)}
 
 /* contact */
 .contact{padding:0 0 clamp(72px,8vw,120px)}
@@ -467,32 +464,35 @@ a,button{touch-action:manipulation}
   .rt-node.is-ping .rt-ping{animation:none}
 }
 
-/* reach: two cards under the route board */
-.cards2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:24px;margin-top:24px}
-.cards2 .core{height:100%;padding:30px;display:flex;flex-direction:column}
-.dl-2{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 28px}
-.since{margin-top:auto;padding-top:28px}
-.since::before{content:"";display:block;height:1px;background:var(--line);margin-bottom:20px}
-.since-big{font-family:var(--display);font-weight:360;font-size:40px;line-height:1;letter-spacing:-0.02em}
-.since-h{margin-top:10px;font-size:15px;line-height:1.55;color:var(--ink-2);max-width:42ch}
-.ticks{margin-top:22px}
-.tk-row{display:grid;grid-template-columns:repeat(100,minmax(0,1fr));gap:2px;height:36px;align-items:end}
-.tk-row i{display:block;height:100%;border-radius:1.5px;transform-origin:50% 100%}
-.tk-row i.a,.tk-key i.a{background:var(--rasp)}
-.tk-row i.b,.tk-key i.b{background:#D98C9B}
-.tk-row i.c,.tk-key i.c{background:rgba(28,38,32,.13)}
-.tk-key{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px 20px;font-size:13px;line-height:1.3;color:var(--ink-2)}
-.tk-key li{display:flex;align-items:center;gap:8px;white-space:nowrap}
-.tk-key i{display:block;width:10px;height:10px;border-radius:3px}
-@media (max-width:900px){.cards2{grid-template-columns:minmax(0,1fr)}}
-@media (max-width:640px){.dl-2{grid-template-columns:minmax(0,1fr)}.tk-row{gap:1px;height:32px}.cards2 .core{padding:26px 22px}}
+
+/* records, now their own block before the contact */
+.records-sec{padding-block:clamp(96px,10vw,150px) clamp(64px,7vw,100px)}
+.records-sec .records{margin-top:0}
+.records-head h2.serif{margin:10px 0 0}
+/* more brand work: cards with small logos */
+.notes{list-style:none;margin:clamp(48px,6vw,72px) 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.notes li{display:flex}
+.note{flex:1;display:flex;flex-direction:column;gap:16px;padding:22px 22px 20px;border-radius:24px;background:rgba(245,246,241,.62);box-shadow:inset 0 0 0 1px rgba(28,38,32,.08);color:var(--ink);text-decoration:none;touch-action:manipulation;-webkit-tap-highlight-color:transparent;transition:transform .45s var(--ease-out),background-color .3s ease,box-shadow .3s ease}
+.note-logo{height:30px;display:flex;align-items:center}
+.note-mark{display:block;flex:none;width:var(--w);height:var(--h);background-color:currentColor;-webkit-mask:var(--src) left center/contain no-repeat;mask:var(--src) left center/contain no-repeat}
+.note-t{font-size:15px;line-height:1.55;color:var(--ink-2)}
+.note-t b{font-weight:600;color:var(--ink)}
+.note-cta{margin-top:auto;display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:500;color:var(--ink)}
+.note-cta svg{width:14px;height:14px;flex:none;transition:transform .35s var(--ease-out)}
+.note:active{transform:scale(.985)}
+@media (hover:hover) and (pointer:fine){
+  .note:hover{transform:translateY(-3px);background:rgba(245,246,241,.94);box-shadow:inset 0 0 0 1px rgba(28,38,32,.12),0 24px 40px -30px rgba(28,38,32,.45)}
+  .note:hover .note-cta svg{transform:translate(2px,-2px)}
+}
+@media (max-width:1100px){.notes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.notes{grid-template-columns:minmax(0,1fr);gap:12px}.note{padding:20px}}
+@media (prefers-reduced-motion:reduce){.note,.note-cta svg{transition:none}}
 
 /* responsive */
 @media (max-width:1100px){
   .ver-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .rec-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .big-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 32px}
-  .strip{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media (max-width:900px){
   .hero-grid{grid-template-columns:minmax(0,1fr)}
@@ -519,7 +519,6 @@ a,button{touch-action:manipulation}
   .rec-grid{grid-template-columns:minmax(0,1fr)}
   .aud-stats{grid-template-columns:minmax(0,1fr)}
   .ver-grid{grid-template-columns:minmax(0,1fr)}
-  .strip{grid-template-columns:minmax(0,1fr)}
   .deliver{grid-template-columns:minmax(0,1fr)}
   .bar{grid-template-columns:96px minmax(0,1fr) 48px}
   .nav-logo{font-size:20px}
@@ -542,9 +541,9 @@ html.js:not(.ready) [data-intro]{visibility:hidden}
     <a class="nav-logo" href="#top" translate="no">ansyva</a>
     <div class="nav-links">
       <a href="#work">Work</a>
-      <a href="#reach">Reach</a>
       <a href="#audience">Audience</a>
       <a href="#partners">Partners</a>
+      <a href="#reach">Reach</a>
     </div>
     <a class="btn btn-dark magnetic" href="#contact">Contact<span class="ic"><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
     <span class="nav-progress" aria-hidden="true"><i></i></span>
@@ -590,22 +589,6 @@ html.js:not(.ready) [data-intro]{visibility:hidden}
       <div class="big"><p class="n"><span class="count" data-to="407.8" data-dec="1" data-suf="K">407.8K</span></p><p class="t">likes, comments, saves, shares and reposts</p></div>
       <div class="big"><p class="n"><span class="count" data-to="86.3" data-dec="1" data-suf="%">86.3%</span></p><p class="t">of views came from people who did not follow me yet</p></div>
       <div class="big"><p class="n accent"><span class="count" data-to="8" data-dec="0">8</span></p><p class="t">posts passed 100K views, all of them organic</p></div>
-    </div>
-    <div class="records bezel reveal">
-      <div class="core">
-        <div class="records-head">
-          <div>
-            <p class="label">Records set this quarter</p>
-            <p class="serif">Most of the account’s all-time creative records were reset between July and October.</p>
-          </div>
-        </div>
-        <div class="rec-grid stagger">
-          <div class="rec"><p class="n"><span class="count" data-to="1.78" data-dec="2" data-suf="M">1.78M</span></p><p>views on one Reel, “Shoot vs. Shot”</p><a class="ln-arrow" href="https://www.instagram.com/reel/Db-t5PLMqCw/" target="_blank" rel="noopener">Watch the Reel<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a></div>
-          <div class="rec"><p class="n"><span class="count" data-to="22.9" data-dec="1" data-suf="%">22.9%</span></p><p>skip rate on my Dolomites Reel: 77% kept watching past the first three seconds</p><a class="ln-arrow" href="https://www.instagram.com/reel/Da2vIAtM8Ta/" target="_blank" rel="noopener">Watch the Reel<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a></div>
-          <div class="rec"><p class="n"><span class="count" data-to="86.2" data-dec="1" data-suf="%">86.2%</span></p><p>of a Reel’s views came from the Reels tab and Explore, where new audiences find you</p><a class="ln-arrow" href="https://www.instagram.com/p/DbS74dgMI9I/" target="_blank" rel="noopener">Watch the Reel<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a></div>
-          <div class="rec"><p class="n"><span class="count" data-to="23.1" data-dec="1" data-suf="K">23.1K</span></p><p>saves and 14.4K shares on the Venice Reel</p><a class="ln-arrow" href="https://www.instagram.com/reel/DbdOmmis3wy/" target="_blank" rel="noopener">Watch the Reel<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a></div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -659,9 +642,9 @@ html.js:not(.ready) [data-intro]{visibility:hidden}
         </li>
         <li class="wc" style="--ar:3/4;--h:56;--pos:50% 50%">
           <div class="wc-media">
-            <div class="wc-img vmedia"><div class="par"><img class="poster" src="img/p07.jpg" width="1000" height="1333" loading="lazy" decoding="async" alt=""></div></div>
+            <div class="wc-img vmedia" data-hd="v/v07.mp4" data-sd="v/v07.mp4"><div class="par"><img class="poster" src="img/p07.jpg" width="1000" height="1333" loading="lazy" decoding="async" alt=""><video muted loop playsinline preload="none" width="1080" height="1440" aria-hidden="true" tabindex="-1"></video></div></div>
             <a class="hit" href="https://www.instagram.com/p/Db29XnmDEKy/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"></a>
-            
+            <button class="vbtn" type="button" aria-label="Pause video"><span class="i-pause"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="5.5" width="3.6" height="13" rx="1.2" fill="currentColor"/><rect x="13.4" y="5.5" width="3.6" height="13" rx="1.2" fill="currentColor"/></svg></span><span class="i-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 6.2v11.6a.9.9 0 0 0 1.37.77l9.2-5.8a.9.9 0 0 0 0-1.54l-9.2-5.8A.9.9 0 0 0 8.5 6.2z" fill="currentColor"/></svg></span></button>
           </div>
           <div class="wc-text">
             <p class="wc-num"><span class="count" data-to="254" data-dec="0" data-suf="K">254K</span><span class="u">views</span></p>
@@ -701,65 +684,6 @@ html.js:not(.ready) [data-intro]{visibility:hidden}
   </div>
 </section>
 
-<section class="reach" id="reach" aria-labelledby="reach-title">
-  <div class="wrap">
-    <div class="reach-head">
-      <h2 class="sec-title split" id="reach-title">Shot across Europe.<br>Watched worldwide.</h2>
-      <p class="sec-note reveal">No single country makes up more than a quarter of my audience. In Q3, my breakout Reels found their viewers across Western Europe, North America and East Asia.</p>
-    </div>
-    <div class="route bezel reveal" data-route data-stops='[{"c": "United States", "s": "12.3%", "reel": "bts"}, {"c": "United Kingdom", "s": "7.2%", "reel": "lasso"}, {"c": "France", "s": "6.0%", "reel": "lasso"}, {"c": "Germany", "s": "15.7%", "reel": "lasso"}, {"c": "Italy", "s": "7.2%", "reel": "venice"}, {"c": "South Korea", "s": "10.3%", "reel": "planet"}, {"c": "Japan", "s": "23.9%", "reel": "planet"}]' role="region" aria-labelledby="rt-title">
-      <div class="route-core">
-        <div class="rt-sky" aria-hidden="true"><svg viewBox="0 0 1300 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><g fill="#F5F6F1"><circle cx="423.8" cy="102.1" r="0.5" opacity="0.09"/><circle cx="696.1" cy="236.2" r="0.5" opacity="0.21"/><circle cx="283.7" cy="61.6" r="0.8" opacity="0.09"/><circle cx="124.5" cy="272.9" r="0.9" opacity="0.10"/><circle cx="294.6" cy="399.5" r="0.5" opacity="0.16"/><circle cx="517.3" cy="617.2" r="0.5" opacity="0.16"/><circle cx="179" cy="269.5" r="0.9" opacity="0.10"/><circle cx="404.1" cy="517.3" r="0.6" opacity="0.09"/><circle cx="741.4" cy="125.2" r="0.5" opacity="0.16"/><circle cx="88.6" cy="45.2" r="0.6" opacity="0.15"/><circle cx="690.7" cy="493" r="0.8" opacity="0.16"/><circle cx="589.9" cy="195.1" r="0.6" opacity="0.18"/><circle cx="321.4" cy="366.4" r="0.9" opacity="0.15"/><circle cx="449" cy="288.1" r="0.9" opacity="0.22"/><circle cx="159.6" cy="268.9" r="0.7" opacity="0.10"/><circle cx="635.8" cy="32.5" r="0.5" opacity="0.19"/><circle cx="743.8" cy="554.3" r="0.7" opacity="0.13"/><circle cx="457.6" cy="317.9" r="0.8" opacity="0.09"/><circle cx="128.2" cy="176.4" r="0.5" opacity="0.09"/><circle cx="908.7" cy="411.8" r="0.8" opacity="0.12"/><circle cx="503.4" cy="425.2" r="0.5" opacity="0.21"/><circle cx="464.4" cy="389.2" r="0.8" opacity="0.09"/><circle cx="994.4" cy="88.7" r="0.6" opacity="0.14"/><circle cx="1185.2" cy="317.8" r="0.6" opacity="0.14"/><circle cx="713.5" cy="559.2" r="0.8" opacity="0.20"/><circle cx="365.5" cy="267.1" r="0.7" opacity="0.18"/><circle cx="496.5" cy="152" r="0.5" opacity="0.10"/><circle cx="305.8" cy="153.6" r="0.8" opacity="0.20"/><circle cx="242.1" cy="183.9" r="0.6" opacity="0.14"/><circle cx="482.1" cy="361.4" r="0.6" opacity="0.18"/><circle cx="669.9" cy="393.4" r="0.5" opacity="0.14"/><circle cx="1126.3" cy="602" r="0.9" opacity="0.13"/><circle cx="520.3" cy="72.6" r="0.8" opacity="0.09"/><circle cx="94.5" cy="138.3" r="0.6" opacity="0.10"/><circle cx="779.3" cy="71.9" r="0.9" opacity="0.10"/><circle cx="138.3" cy="234.9" r="0.5" opacity="0.09"/><circle cx="275" cy="242.8" r="0.7" opacity="0.21"/><circle cx="781.3" cy="303.9" r="0.5" opacity="0.20"/><circle cx="1283.1" cy="298.8" r="0.8" opacity="0.12"/><circle cx="193" cy="475.8" r="0.7" opacity="0.15"/><circle cx="896.6" cy="330.2" r="0.6" opacity="0.21"/><circle cx="686.3" cy="99.5" r="0.9" opacity="0.21"/><circle cx="981.5" cy="194" r="0.5" opacity="0.18"/><circle cx="343.3" cy="236.8" r="0.6" opacity="0.13"/><circle cx="294.1" cy="345.9" r="0.9" opacity="0.13"/><circle cx="294.4" cy="514.4" r="0.6" opacity="0.19"/></g></svg></div>
-        <div class="rt-dawn" aria-hidden="true"></div>
-        <div class="rt-head">
-          <div><h3 class="rt-title" id="rt-title">Where the breakouts went</h3><p class="rt-sub">Share of viewers on a single Q3 Reel, west to east</p></div>
-          <p class="rt-meta">4 Reels, 7 countries</p>
-        </div>
-        <div class="rt-card">
-          <div class="rt-fig" aria-hidden="true"><img data-reel="bts" class="" src="img/p04.jpg" width="900" height="1600" loading="lazy" decoding="async" alt="" style="--pos:50% 30%"><img data-reel="lasso" class="" src="img/p06.jpg" width="1000" height="1333" loading="lazy" decoding="async" alt="" style="--pos:50% 36%"><img data-reel="venice" class="" src="img/p05.jpg" width="1920" height="1079" loading="lazy" decoding="async" alt="" style="--pos:60% 50%"><img data-reel="planet" class="on" src="img/p08.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="" style="--pos:70% 46%"></div>
-          <div class="rt-txt"><div class="rt-tx" data-i="0" inert aria-hidden="true"><p class="rt-k">12.3% of viewers</p><p class="rt-t">United States</p><p class="rt-d">on <a class="ln" href="https://www.instagram.com/reel/Db-t5PLMqCw/" target="_blank" rel="noopener">“Shoot vs. Shot”</a>, 1.78M views</p></div><div class="rt-tx" data-i="1" inert aria-hidden="true"><p class="rt-k">7.2% of viewers</p><p class="rt-t">United Kingdom</p><p class="rt-d">on the <a class="ln" href="https://www.instagram.com/reel/Da2vIAtM8Ta/" target="_blank" rel="noopener">Dolomites Reel</a>, 579K views</p></div><div class="rt-tx" data-i="2" inert aria-hidden="true"><p class="rt-k">6.0% of viewers</p><p class="rt-t">France</p><p class="rt-d">on the <a class="ln" href="https://www.instagram.com/reel/Da2vIAtM8Ta/" target="_blank" rel="noopener">Dolomites Reel</a>, 579K views</p></div><div class="rt-tx" data-i="3" inert aria-hidden="true"><p class="rt-k">15.7% of viewers</p><p class="rt-t">Germany</p><p class="rt-d">on the <a class="ln" href="https://www.instagram.com/reel/Da2vIAtM8Ta/" target="_blank" rel="noopener">Dolomites Reel</a>, 579K views</p></div><div class="rt-tx" data-i="4" inert aria-hidden="true"><p class="rt-k">7.2% of viewers</p><p class="rt-t">Italy</p><p class="rt-d">on the <a class="ln" href="https://www.instagram.com/reel/DbdOmmis3wy/" target="_blank" rel="noopener">Venice Reel</a>, 1.3M views</p></div><div class="rt-tx" data-i="5" inert aria-hidden="true"><p class="rt-k">10.3% of viewers</p><p class="rt-t">South Korea</p><p class="rt-d">on <a class="ln" href="https://www.instagram.com/p/DbS74dgMI9I/" target="_blank" rel="noopener">“Such a beautiful planet”</a>, 194K views</p></div><div class="rt-tx is-on" data-i="6"><p class="rt-k">23.9% of viewers</p><p class="rt-t">Japan</p><p class="rt-d">on <a class="ln" href="https://www.instagram.com/p/DbS74dgMI9I/" target="_blank" rel="noopener">“Such a beautiful planet”</a>, 194K views</p></div></div>
-        </div>
-        <div class="rt-maps"><div class="rt-map rt-h" data-segs='["M60 292", "C84.2 304 156.7 377 205 364", "C253.3 351 300.8 228.7 350 214", "C399.2 199.3 450.8 287.7 500 276", "C549.2 264.3 596.7 156.7 645 144", "C693.3 131.3 740.8 214.3 790 200", "C839.2 185.7 915 81.7 940 58"]' style="--ar:1000/480"><svg class="rt-svg" viewBox="0 0 1000 480" aria-hidden="true" focusable="false"><defs><radialGradient id="rtGlowG"><stop offset="0" stop-color="#E6ECD3" stop-opacity=".75"/><stop offset=".45" stop-color="#CBD3B5" stop-opacity=".28"/><stop offset="1" stop-color="#CBD3B5" stop-opacity="0"/></radialGradient></defs><path class="rt-base" d="M60 292C84.2 304 156.7 377 205 364C253.3 351 300.8 228.7 350 214C399.2 199.3 450.8 287.7 500 276C549.2 264.3 596.7 156.7 645 144C693.3 131.3 740.8 214.3 790 200C839.2 185.7 915 81.7 940 58"/><path class="rt-glowline" d="M60 292C84.2 304 156.7 377 205 364C253.3 351 300.8 228.7 350 214C399.2 199.3 450.8 287.7 500 276C549.2 264.3 596.7 156.7 645 144C693.3 131.3 740.8 214.3 790 200C839.2 185.7 915 81.7 940 58"/><path class="rt-line" d="M60 292C84.2 304 156.7 377 205 364C253.3 351 300.8 228.7 350 214C399.2 199.3 450.8 287.7 500 276C549.2 264.3 596.7 156.7 645 144C693.3 131.3 740.8 214.3 790 200C839.2 185.7 915 81.7 940 58"/><g class="rt-nodes"><g class="rt-node is-lit" transform="translate(60 292)"><circle class="rt-ping" r="5"/><circle class="rt-dot" r="4.6"/></g><g class="rt-node is-lit" transform="translate(205 364)"><circle class="rt-ping" r="5"/><circle class="rt-dot" r="4.6"/></g><g class="rt-node is-lit" transform="translate(350 214)"><circle class="rt-ping" r="5"/><circle class="rt-dot" r="4.6"/></g><g class="rt-node is-lit" transform="translate(500 276)"><circle class="rt-ping" r="5"/><circle class="rt-dot" r="4.6"/></g><g class="rt-node is-lit" transform="translate(645 144)"><circle class="rt-ping" r="5"/><circle class="rt-dot" r="4.6"/></g><g class="rt-node is-lit" transform="translate(790 200)"><circle class="rt-ping" r="5"/><circle class="rt-dot" r="4.6"/></g><g class="rt-node is-lit is-cur" transform="translate(940 58)"><circle class="rt-ping" r="5"/><circle class="rt-dot" r="4.6"/></g></g><g class="rt-comet" aria-hidden="true"><ellipse class="rt-cglow" cx="0" cy="0" rx="22" ry="11" fill="url(#rtGlowG)"/><rect class="rt-cbody" x="-3.6" y="-3.6" width="7.2" height="7.2" rx="3.6" fill="#F5F6F1"/></g></svg><span class="rt-lbl is-above is-lit" style="left:6.00%;top:60.83%" aria-hidden="true"><b>United States</b><i>12.3%</i></span><span class="rt-lbl is-below is-lit" style="left:20.50%;top:75.83%" aria-hidden="true"><b>United Kingdom</b><i>7.2%</i></span><span class="rt-lbl is-above is-lit" style="left:35.00%;top:44.58%" aria-hidden="true"><b>France</b><i>6.0%</i></span><span class="rt-lbl is-below is-lit" style="left:50.00%;top:57.50%" aria-hidden="true"><b>Germany</b><i>15.7%</i></span><span class="rt-lbl is-above is-lit" style="left:64.50%;top:30.00%" aria-hidden="true"><b>Italy</b><i>7.2%</i></span><span class="rt-lbl is-below is-lit" style="left:79.00%;top:41.67%" aria-hidden="true"><b>South Korea</b><i>10.3%</i></span><span class="rt-lbl is-above is-lit is-cur" style="left:94.00%;top:12.08%" aria-hidden="true"><b>Japan</b><i>23.9%</i></span><span class="rt-reg" style="left:2.60%;width:6.80%" aria-hidden="true"><span>North America</span></span><span class="rt-reg" style="left:17.10%;width:50.80%" aria-hidden="true"><span>Europe</span></span><span class="rt-reg" style="left:75.60%;width:21.80%" aria-hidden="true"><span>East Asia</span></span><button class="rt-hit" type="button" data-i="0" style="left:6.00%;top:60.83%" aria-label="United States: 12.3% of viewers on “Shoot vs. Shot”, 1.78M views"></button><button class="rt-hit" type="button" data-i="1" style="left:20.50%;top:75.83%" aria-label="United Kingdom: 7.2% of viewers on the Dolomites Reel, 579K views"></button><button class="rt-hit" type="button" data-i="2" style="left:35.00%;top:44.58%" aria-label="France: 6.0% of viewers on the Dolomites Reel, 579K views"></button><button class="rt-hit" type="button" data-i="3" style="left:50.00%;top:57.50%" aria-label="Germany: 15.7% of viewers on the Dolomites Reel, 579K views"></button><button class="rt-hit" type="button" data-i="4" style="left:64.50%;top:30.00%" aria-label="Italy: 7.2% of viewers on the Venice Reel, 1.3M views"></button><button class="rt-hit" type="button" data-i="5" style="left:79.00%;top:41.67%" aria-label="South Korea: 10.3% of viewers on “Such a beautiful planet”, 194K views"></button><button class="rt-hit" type="button" data-i="6" style="left:94.00%;top:12.08%" aria-label="Japan: 23.9% of viewers on “Such a beautiful planet”, 194K views" aria-current="true"></button></div><div class="rt-map rt-v" data-segs='["M70 30", "C66 41.5 43.3 76 46 99", "C48.7 122 85.3 145 86 168", "C86.7 191 49.3 214 50 237", "C50.7 260 89.3 283 90 306", "C90.7 329 56 352 54 375", "C52 398 74 432.5 78 444"]' style="--ar:360/476"><svg class="rt-svg" viewBox="0 0 360 476" aria-hidden="true" focusable="false"><defs><radialGradient id="rtGlowG2"><stop offset="0" stop-color="#E6ECD3" stop-opacity=".75"/><stop offset=".45" stop-color="#CBD3B5" stop-opacity=".28"/><stop offset="1" stop-color="#CBD3B5" stop-opacity="0"/></radialGradient></defs><path class="rt-base" d="M70 30C66 41.5 43.3 76 46 99C48.7 122 85.3 145 86 168C86.7 191 49.3 214 50 237C50.7 260 89.3 283 90 306C90.7 329 56 352 54 375C52 398 74 432.5 78 444"/><path class="rt-glowline" d="M70 30C66 41.5 43.3 76 46 99C48.7 122 85.3 145 86 168C86.7 191 49.3 214 50 237C50.7 260 89.3 283 90 306C90.7 329 56 352 54 375C52 398 74 432.5 78 444"/><path class="rt-line" d="M70 30C66 41.5 43.3 76 46 99C48.7 122 85.3 145 86 168C86.7 191 49.3 214 50 237C50.7 260 89.3 283 90 306C90.7 329 56 352 54 375C52 398 74 432.5 78 444"/><g class="rt-nodes"><g class="rt-node is-lit" transform="translate(70 30)"><circle class="rt-ping" r="5"/><circle class="rt-dot" r="4.6"/></g><g class="rt-node is-lit" transform="translate(46 99)"><circle class="rt-ping" r="5"/><circle class="rt-dot" r="4.6"/></g><g class="rt-node is-lit" transform="translate(86 168)"><circle class="rt-ping" r="5"/><circle class="rt-dot" r="4.6"/></g><g class="rt-node is-lit" transform="translate(50 237)"><circle class="rt-ping" r="5"/><circle class="rt-dot" r="4.6"/></g><g class="rt-node is-lit" transform="translate(90 306)"><circle class="rt-ping" r="5"/><circle class="rt-dot" r="4.6"/></g><g class="rt-node is-lit" transform="translate(54 375)"><circle class="rt-ping" r="5"/><circle class="rt-dot" r="4.6"/></g><g class="rt-node is-lit is-cur" transform="translate(78 444)"><circle class="rt-ping" r="5"/><circle class="rt-dot" r="4.6"/></g></g><g class="rt-comet" aria-hidden="true"><ellipse class="rt-cglow" cx="0" cy="0" rx="22" ry="11" fill="url(#rtGlowG2)"/><rect class="rt-cbody" x="-3.6" y="-3.6" width="7.2" height="7.2" rx="3.6" fill="#F5F6F1"/></g></svg><span class="rt-lbl is-right is-lit" style="left:36.67%;top:6.30%" aria-hidden="true"><b>United States</b><i>12.3%</i></span><span class="rt-lbl is-right is-lit" style="left:36.67%;top:20.80%" aria-hidden="true"><b>United Kingdom</b><i>7.2%</i></span><span class="rt-lbl is-right is-lit" style="left:36.67%;top:35.29%" aria-hidden="true"><b>France</b><i>6.0%</i></span><span class="rt-lbl is-right is-lit" style="left:36.67%;top:49.79%" aria-hidden="true"><b>Germany</b><i>15.7%</i></span><span class="rt-lbl is-right is-lit" style="left:36.67%;top:64.29%" aria-hidden="true"><b>Italy</b><i>7.2%</i></span><span class="rt-lbl is-right is-lit" style="left:36.67%;top:78.78%" aria-hidden="true"><b>South Korea</b><i>10.3%</i></span><span class="rt-lbl is-right is-lit is-cur" style="left:36.67%;top:93.28%" aria-hidden="true"><b>Japan</b><i>23.9%</i></span><button class="rt-hit" type="button" data-i="0" style="left:19.44%;top:6.30%" aria-label="United States: 12.3% of viewers on “Shoot vs. Shot”, 1.78M views"></button><button class="rt-hit" type="button" data-i="1" style="left:12.78%;top:20.80%" aria-label="United Kingdom: 7.2% of viewers on the Dolomites Reel, 579K views"></button><button class="rt-hit" type="button" data-i="2" style="left:23.89%;top:35.29%" aria-label="France: 6.0% of viewers on the Dolomites Reel, 579K views"></button><button class="rt-hit" type="button" data-i="3" style="left:13.89%;top:49.79%" aria-label="Germany: 15.7% of viewers on the Dolomites Reel, 579K views"></button><button class="rt-hit" type="button" data-i="4" style="left:25.00%;top:64.29%" aria-label="Italy: 7.2% of viewers on the Venice Reel, 1.3M views"></button><button class="rt-hit" type="button" data-i="5" style="left:15.00%;top:78.78%" aria-label="South Korea: 10.3% of viewers on “Such a beautiful planet”, 194K views"></button><button class="rt-hit" type="button" data-i="6" style="left:21.67%;top:93.28%" aria-label="Japan: 23.9% of viewers on “Such a beautiful planet”, 194K views" aria-current="true"></button></div></div>
-        <div class="rt-foot">
-          <span class="rt-prog" aria-hidden="true"><i></i></span>
-          <p class="rt-src">Instagram Insights, Q3 2026</p>
-          <p class="rt-count" aria-hidden="true"><b>07</b> / 07</p>
-          <button class="rt-play" type="button" aria-label="Pause the route"><span class="i-pause"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="5.5" width="3.6" height="13" rx="1.2" fill="currentColor"/><rect x="13.4" y="5.5" width="3.6" height="13" rx="1.2" fill="currentColor"/></svg></span><span class="i-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 6.2v11.6a.9.9 0 0 0 1.37.77l9.2-5.8a.9.9 0 0 0 0-1.54l-9.2-5.8A.9.9 0 0 0 8.5 6.2z" fill="currentColor"/></svg></span></button>
-        </div>
-        <ul class="sr-only"><li>United States, 12.3% of viewers on <a href="https://www.instagram.com/reel/Db-t5PLMqCw/">“Shoot vs. Shot”</a>, 1.78M views</li><li>United Kingdom, 7.2% of viewers on the <a href="https://www.instagram.com/reel/Da2vIAtM8Ta/">Dolomites Reel</a>, 579K views</li><li>France, 6.0% of viewers on the <a href="https://www.instagram.com/reel/Da2vIAtM8Ta/">Dolomites Reel</a>, 579K views</li><li>Germany, 15.7% of viewers on the <a href="https://www.instagram.com/reel/Da2vIAtM8Ta/">Dolomites Reel</a>, 579K views</li><li>Italy, 7.2% of viewers on the <a href="https://www.instagram.com/reel/DbdOmmis3wy/">Venice Reel</a>, 1.3M views</li><li>South Korea, 10.3% of viewers on <a href="https://www.instagram.com/p/DbS74dgMI9I/">“Such a beautiful planet”</a>, 194K views</li><li>Japan, 23.9% of viewers on <a href="https://www.instagram.com/p/DbS74dgMI9I/">“Such a beautiful planet”</a>, 194K views</li></ul>
-      </div>
-    </div>
-
-    <div class="cards2 stagger">
-      <div class="bezel"><div class="core">
-        <h3 class="card-title">My active audience</h3>
-        <p class="card-sub">Followers who interact with my content, HAFI, October 2026</p>
-        <p class="lang">English</p>
-        <p class="card-sub" style="font-size:15px;line-height:1.55">is the #1 language, at about 40%. London (3.7%) and Paris (2.5%) are among the top five cities.</p>
-        <div class="since">
-          <p class="since-big">6 in 10</p>
-          <p class="since-h">people in my active audience are women aged 18 to 34.</p>
-          <div class="ticks" role="img" aria-label="Active audience by age and gender: women aged 25 to 34, 38%; women aged 18 to 24, 23%; everyone else, 39%. One mark per percent.">
-            <span class="tk-row" aria-hidden="true"><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i></span>
-          </div>
-          <ul class="tk-key" aria-hidden="true"><li><i class="a"></i>Women 25–34, 38%</li><li><i class="b"></i>Women 18–24, 23%</li><li><i class="c"></i>Everyone else, 39%</li></ul>
-        </div>
-      </div></div>
-      <div class="bezel"><div class="core">
-        <h3 class="card-title">Your home market, through a co-post</h3>
-        <p class="card-sub">Share of viewers on brand collaboration posts</p>
-        <dl class="dl dl-2">
-          <div><dt><a class="ln" href="https://www.instagram.com/reel/DXR8sJjiCwe/" target="_blank" rel="noopener">Dopper</a></dt><dd>77.4% Benelux and DACH</dd></div>
-          <div><dt><a class="ln" href="https://www.instagram.com/reel/DcLkQTcsp_J/" target="_blank" rel="noopener">Shark Home UK</a></dt><dd>United Kingdom #1, at 18.2%</dd></div>
-          <div><dt><a class="ln" href="https://www.instagram.com/reel/DaKpK8MkV-x/" target="_blank" rel="noopener">Motel Rocks</a></dt><dd>United Kingdom 16.5%, United States 13.3%, Australia 7.5%</dd></div>
-          <div><dt><a class="ln" href="https://www.instagram.com/reel/DbK_unmsQGV/" target="_blank" rel="noopener">Courtyard by Marriott</a></dt><dd>United States #1 on both Reels, at 11.4% and 10.1%</dd></div>
-          <div><dt><a class="ln" href="https://www.instagram.com/reel/Dd_etHHM6cS/" target="_blank" rel="noopener">XO Soda × Żabka</a></dt><dd>Poland #1, at 25.8%, for a market launch</dd></div>
-        </dl>
-      </div></div>
-    </div>
-  </div>
-</section>
-
 <section class="audience" id="audience" aria-labelledby="aud-title">
   <div class="wrap">
     <div class="sec-head">
@@ -786,47 +710,6 @@ html.js:not(.ready) [data-intro]{visibility:hidden}
           <div class="bar"><span>65+</span><span class="track"><span class="fill" style="--w:1.4%;min-width:4px"></span></span><span class="v">0.7%</span></div>
         </div>
       </div></div>
-    </div>
-  </div>
-</section>
-
-<section class="verified" id="verified" aria-labelledby="ver-title">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2 class="sec-title split" id="ver-title">Checked by<br>independent analytics</h2>
-      <p class="sec-note reveal">Third-party audits from HAFI (formerly HypeAuditor) and Heepsy, October 2026. Two separate tools, the same answer on audience quality.</p>
-    </div>
-    <div class="ver-grid stagger">
-      <div class="vcard"><div class="core">
-        <div class="viz"><div class="ring" role="img" aria-label="86% quality audience"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="52" fill="none" stroke="rgba(245,246,241,.12)" stroke-width="8"/><circle class="ring-val" cx="60" cy="60" r="52" fill="none" stroke="#F5F6F1" stroke-width="8" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="14" data-off="14"/></svg></div></div>
-        <p class="n"><span class="count" data-to="86" data-dec="0" data-suf="%">86%</span></p>
-        <p>quality audience (HAFI). Heepsy counts 85% real followers, and only 5.4% of accounts look suspicious.</p>
-      </div></div>
-      <div class="vcard"><div class="core">
-        <div class="viz"><div class="gbars bars-anim" role="img" aria-label="Follower growth in 12 months: this account 65%, similar accounts 15%">
-          <div class="gbar"><span>This account, +65%</span><span class="track"><span class="fill" style="--w:100%"></span></span></div>
-          <div class="gbar bench"><span>Similar-size accounts, +15%</span><span class="track"><span class="fill" style="--w:23.3%"></span></span></div>
-        </div></div>
-        <p class="n"><span class="count" data-to="4.3" data-dec="1" data-suf="×">4.3×</span></p>
-        <p>the benchmark: +65% follower growth in 12 months, against +15% for accounts of a similar size (HAFI).</p>
-      </div></div>
-      <div class="vcard"><div class="core">
-        <div class="viz"><div class="ring" role="img" aria-label="Account Health Score 77 out of 100"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="52" fill="none" stroke="rgba(245,246,241,.12)" stroke-width="8"/><circle class="ring-val" cx="60" cy="60" r="52" fill="none" stroke="#F5F6F1" stroke-width="8" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="23" data-off="23"/></svg></div></div>
-        <p class="n"><span class="count" data-to="77" data-dec="0">77</span><small>/100</small></p>
-        <p>Account Health Score, rated good. It combines audience quality, engagement and authenticity (HAFI).</p>
-      </div></div>
-      <div class="vcard"><div class="core">
-        <div class="viz"><div class="pct bars-anim" role="img" aria-label="Reactions per post higher than 84% of creators">
-          <div class="track"><span class="fill"></span><span class="mark"></span></div>
-          <div class="scale"><span>0</span><span>84th percentile</span><span>100</span></div>
-        </div></div>
-        <p class="n">Top 16%</p>
-        <p>for reactions per post: higher than 84% of creators (Heepsy).</p>
-      </div></div>
-    </div>
-    <div class="commenters reveal">
-      <p>Brands already in my comments, per HAFI’s notable commenters:</p>
-      <p class="names">Insta360, UGG, Furla, Boden, American Vintage, Miista</p>
     </div>
   </div>
 </section>
@@ -861,7 +744,7 @@ html.js:not(.ready) [data-intro]{visibility:hidden}
             </div>
             <div class="case-body">
               <p class="label">Furla, April 2026</p>
-              <h3>A campaign with an Italian bag house</h3>
+              <h3>A campaign with FURLA</h3>
               <p class="txt">A cinematic Reel, “What Makes Life Better?”, created with Furla, the Italian bag brand, and co-published on both accounts.</p>
               <div class="case-metric"><p class="n"><span class="count" data-to="556877" data-dec="0" data-sep="1">556,877</span></p><p>views and 30.8K likes on the co-post, which Furla also backed with paid media</p></div>
               <a class="ln-arrow" href="https://www.instagram.com/reel/DXtiH1ZjIJX/" target="_blank" rel="noopener">Watch the Furla Reel<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
@@ -929,15 +812,108 @@ html.js:not(.ready) [data-intro]{visibility:hidden}
       </article>
     </div>
 
-    <div class="strip stagger">
-      <p><a class="ln" href="https://www.instagram.com/reel/Ddl1_hKMWNo/" target="_blank" rel="noopener">UGG</a>. Three UGC videos produced for the brand’s own channels.</p>
-      <p><a class="ln" href="https://www.instagram.com/reel/DbArLNIMcsy/" target="_blank" rel="noopener">Courtyard by Marriott</a>. Two Reels and a carousel, with the US as the #1 market on both Reels.</p>
-      <p><a class="ln" href="https://www.instagram.com/reels/DZZrbXhM31s/" target="_blank" rel="noopener">Absolut</a>. A two-Reel campaign, delivered as a package.</p>
-      <p><a class="ln" href="https://www.instagram.com/reel/DcLkQTcsp_J/" target="_blank" rel="noopener">Shark Home UK</a>. UGC plus a co-post, with the UK as the #1 market.</p>
+    <ul class="notes stagger" aria-label="More brand work">
+      <li><a class="note" href="https://www.instagram.com/reel/Ddl1_hKMWNo/" target="_blank" rel="noopener"><span class="note-logo" aria-hidden="true"><i class="note-mark" style="--src:url(logos/ugg.png);--w:55.3px;--h:25.5px"></i></span><span class="note-t"><b>UGG</b>. Three UGC videos produced for the brand’s own channels.</span><span class="note-cta">See the work<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a></li>
+      <li><a class="note" href="https://www.instagram.com/p/DbF15qgjNlm/" target="_blank" rel="noopener"><span class="note-logo" aria-hidden="true"><i class="note-mark" style="--src:url(logos/courtyard.png);--w:115.2px;--h:18.3px"></i></span><span class="note-t"><b>Courtyard by Marriott</b>. Two Reels and a carousel, with the US as the #1 market on both Reels.</span><span class="note-cta">See the work<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a></li>
+      <li><a class="note" href="https://www.instagram.com/reels/DZZrbXhM31s/" target="_blank" rel="noopener"><span class="note-logo" aria-hidden="true"><i class="note-mark" style="--src:url(logos/absolut.png);--w:76.1px;--h:15.8px"></i></span><span class="note-t"><b>Absolut</b>. A two-Reel campaign, delivered as a package.</span><span class="note-cta">See the work<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a></li>
+      <li><a class="note" href="https://www.instagram.com/reel/DcLkQTcsp_J/" target="_blank" rel="noopener"><span class="note-logo" aria-hidden="true"><i class="note-mark" style="--src:url(logos/shark.png);--w:63.8px;--h:16.8px"></i></span><span class="note-t"><b>Shark Home UK</b>. UGC plus a co-post, with the UK as the #1 market.</span><span class="note-cta">See the work<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="reach" id="reach" aria-labelledby="reach-title">
+  <div class="wrap">
+    <div class="reach-head">
+      <h2 class="sec-title split" id="reach-title">Shot across Europe.<br>Watched worldwide.</h2>
+      <p class="sec-note reveal">No single country makes up more than a quarter of my audience. In Q3, my breakout Reels found their viewers across Western Europe, North America and East Asia.</p>
+    </div>
+    <div class="route bezel reveal" data-route data-stops='[{"c": "United States", "s": "12.3%", "reel": "bts"}, {"c": "United Kingdom", "s": "7.2%", "reel": "lasso"}, {"c": "France", "s": "6.0%", "reel": "lasso"}, {"c": "Germany", "s": "15.7%", "reel": "lasso"}, {"c": "Italy", "s": "7.2%", "reel": "venice"}, {"c": "South Korea", "s": "10.3%", "reel": "planet"}, {"c": "Japan", "s": "23.9%", "reel": "planet"}]' role="region" aria-labelledby="rt-title">
+      <div class="route-core">
+        <div class="rt-sky" aria-hidden="true"><svg viewBox="0 0 1300 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><g fill="#F5F6F1"><circle cx="423.8" cy="102.1" r="0.5" opacity="0.09"/><circle cx="696.1" cy="236.2" r="0.5" opacity="0.21"/><circle cx="283.7" cy="61.6" r="0.8" opacity="0.09"/><circle cx="124.5" cy="272.9" r="0.9" opacity="0.10"/><circle cx="294.6" cy="399.5" r="0.5" opacity="0.16"/><circle cx="517.3" cy="617.2" r="0.5" opacity="0.16"/><circle cx="179" cy="269.5" r="0.9" opacity="0.10"/><circle cx="404.1" cy="517.3" r="0.6" opacity="0.09"/><circle cx="741.4" cy="125.2" r="0.5" opacity="0.16"/><circle cx="88.6" cy="45.2" r="0.6" opacity="0.15"/><circle cx="690.7" cy="493" r="0.8" opacity="0.16"/><circle cx="589.9" cy="195.1" r="0.6" opacity="0.18"/><circle cx="321.4" cy="366.4" r="0.9" opacity="0.15"/><circle cx="449" cy="288.1" r="0.9" opacity="0.22"/><circle cx="159.6" cy="268.9" r="0.7" opacity="0.10"/><circle cx="635.8" cy="32.5" r="0.5" opacity="0.19"/><circle cx="743.8" cy="554.3" r="0.7" opacity="0.13"/><circle cx="457.6" cy="317.9" r="0.8" opacity="0.09"/><circle cx="128.2" cy="176.4" r="0.5" opacity="0.09"/><circle cx="908.7" cy="411.8" r="0.8" opacity="0.12"/><circle cx="503.4" cy="425.2" r="0.5" opacity="0.21"/><circle cx="464.4" cy="389.2" r="0.8" opacity="0.09"/><circle cx="994.4" cy="88.7" r="0.6" opacity="0.14"/><circle cx="1185.2" cy="317.8" r="0.6" opacity="0.14"/><circle cx="713.5" cy="559.2" r="0.8" opacity="0.20"/><circle cx="365.5" cy="267.1" r="0.7" opacity="0.18"/><circle cx="496.5" cy="152" r="0.5" opacity="0.10"/><circle cx="305.8" cy="153.6" r="0.8" opacity="0.20"/><circle cx="242.1" cy="183.9" r="0.6" opacity="0.14"/><circle cx="482.1" cy="361.4" r="0.6" opacity="0.18"/><circle cx="669.9" cy="393.4" r="0.5" opacity="0.14"/><circle cx="1126.3" cy="602" r="0.9" opacity="0.13"/><circle cx="520.3" cy="72.6" r="0.8" opacity="0.09"/><circle cx="94.5" cy="138.3" r="0.6" opacity="0.10"/><circle cx="779.3" cy="71.9" r="0.9" opacity="0.10"/><circle cx="138.3" cy="234.9" r="0.5" opacity="0.09"/><circle cx="275" cy="242.8" r="0.7" opacity="0.21"/><circle cx="781.3" cy="303.9" r="0.5" opacity="0.20"/><circle cx="1283.1" cy="298.8" r="0.8" opacity="0.12"/><circle cx="193" cy="475.8" r="0.7" opacity="0.15"/><circle cx="896.6" cy="330.2" r="0.6" opacity="0.21"/><circle cx="686.3" cy="99.5" r="0.9" opacity="0.21"/><circle cx="981.5" cy="194" r="0.5" opacity="0.18"/><circle cx="343.3" cy="236.8" r="0.6" opacity="0.13"/><circle cx="294.1" cy="345.9" r="0.9" opacity="0.13"/><circle cx="294.4" cy="514.4" r="0.6" opacity="0.19"/></g></svg></div>
+        <div class="rt-dawn" aria-hidden="true"></div>
+        <div class="rt-head">
+          <div><h3 class="rt-title" id="rt-title">Where the breakouts went</h3><p class="rt-sub">Share of viewers on a single Q3 Reel, west to east</p></div>
+          <p class="rt-meta">4 Reels, 7 countries</p>
+        </div>
+        <div class="rt-card">
+          <div class="rt-fig" aria-hidden="true"><img data-reel="bts" class="" src="img/p04.jpg" width="900" height="1600" loading="lazy" decoding="async" alt="" style="--pos:50% 30%"><img data-reel="lasso" class="" src="img/p06.jpg" width="1000" height="1333" loading="lazy" decoding="async" alt="" style="--pos:50% 36%"><img data-reel="venice" class="" src="img/p05.jpg" width="1920" height="1079" loading="lazy" decoding="async" alt="" style="--pos:60% 50%"><img data-reel="planet" class="on" src="img/p08.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="" style="--pos:70% 46%"></div>
+          <div class="rt-txt"><div class="rt-tx" data-i="0" inert aria-hidden="true"><p class="rt-k">12.3% of viewers</p><p class="rt-t">United States</p><p class="rt-d">on <a class="ln" href="https://www.instagram.com/reel/Db-t5PLMqCw/" target="_blank" rel="noopener">“Shoot vs. Shot”</a>, 1.78M views</p></div><div class="rt-tx" data-i="1" inert aria-hidden="true"><p class="rt-k">7.2% of viewers</p><p class="rt-t">United Kingdom</p><p class="rt-d">on the <a class="ln" href="https://www.instagram.com/reel/Da2vIAtM8Ta/" target="_blank" rel="noopener">Dolomites Reel</a>, 579K views</p></div><div class="rt-tx" data-i="2" inert aria-hidden="true"><p class="rt-k">6.0% of viewers</p><p class="rt-t">France</p><p class="rt-d">on the <a class="ln" href="https://www.instagram.com/reel/Da2vIAtM8Ta/" target="_blank" rel="noopener">Dolomites Reel</a>, 579K views</p></div><div class="rt-tx" data-i="3" inert aria-hidden="true"><p class="rt-k">15.7% of viewers</p><p class="rt-t">Germany</p><p class="rt-d">on the <a class="ln" href="https://www.instagram.com/reel/Da2vIAtM8Ta/" target="_blank" rel="noopener">Dolomites Reel</a>, 579K views</p></div><div class="rt-tx" data-i="4" inert aria-hidden="true"><p class="rt-k">7.2% of viewers</p><p class="rt-t">Italy</p><p class="rt-d">on the <a class="ln" href="https://www.instagram.com/reel/DbdOmmis3wy/" target="_blank" rel="noopener">Venice Reel</a>, 1.3M views</p></div><div class="rt-tx" data-i="5" inert aria-hidden="true"><p class="rt-k">10.3% of viewers</p><p class="rt-t">South Korea</p><p class="rt-d">on <a class="ln" href="https://www.instagram.com/p/DbS74dgMI9I/" target="_blank" rel="noopener">“Such a beautiful planet”</a>, 194K views</p></div><div class="rt-tx is-on" data-i="6"><p class="rt-k">23.9% of viewers</p><p class="rt-t">Japan</p><p class="rt-d">on <a class="ln" href="https://www.instagram.com/p/DbS74dgMI9I/" target="_blank" rel="noopener">“Such a beautiful planet”</a>, 194K views</p></div></div>
+        </div>
+        <div class="rt-maps"><div class="rt-map rt-h" data-segs='["M60 292", "C84.2 304 156.7 377 205 364", "C253.3 351 300.8 228.7 350 214", "C399.2 199.3 450.8 287.7 500 276", "C549.2 264.3 596.7 156.7 645 144", "C693.3 131.3 740.8 214.3 790 200", "C839.2 185.7 915 81.7 940 58"]' style="--ar:1000/480"><svg class="rt-svg" viewBox="0 0 1000 480" aria-hidden="true" focusable="false"><defs><radialGradient id="rtGlowG"><stop offset="0" stop-color="#E6ECD3" stop-opacity=".75"/><stop offset=".45" stop-color="#CBD3B5" stop-opacity=".28"/><stop offset="1" stop-color="#CBD3B5" stop-opacity="0"/></radialGradient></defs><path class="rt-base" d="M60 292C84.2 304 156.7 377 205 364C253.3 351 300.8 228.7 350 214C399.2 199.3 450.8 287.7 500 276C549.2 264.3 596.7 156.7 645 144C693.3 131.3 740.8 214.3 790 200C839.2 185.7 915 81.7 940 58"/><path class="rt-glowline" d="M60 292C84.2 304 156.7 377 205 364C253.3 351 300.8 228.7 350 214C399.2 199.3 450.8 287.7 500 276C549.2 264.3 596.7 156.7 645 144C693.3 131.3 740.8 214.3 790 200C839.2 185.7 915 81.7 940 58"/><path class="rt-line" d="M60 292C84.2 304 156.7 377 205 364C253.3 351 300.8 228.7 350 214C399.2 199.3 450.8 287.7 500 276C549.2 264.3 596.7 156.7 645 144C693.3 131.3 740.8 214.3 790 200C839.2 185.7 915 81.7 940 58"/><g class="rt-nodes"><g class="rt-node is-lit" transform="translate(60 292)"><circle class="rt-ping" r="5"/><circle class="rt-dot" r="4.6"/></g><g class="rt-node is-lit" transform="translate(205 364)"><circle class="rt-ping" r="5"/><circle class="rt-dot" r="4.6"/></g><g class="rt-node is-lit" transform="translate(350 214)"><circle class="rt-ping" r="5"/><circle class="rt-dot" r="4.6"/></g><g class="rt-node is-lit" transform="translate(500 276)"><circle class="rt-ping" r="5"/><circle class="rt-dot" r="4.6"/></g><g class="rt-node is-lit" transform="translate(645 144)"><circle class="rt-ping" r="5"/><circle class="rt-dot" r="4.6"/></g><g class="rt-node is-lit" transform="translate(790 200)"><circle class="rt-ping" r="5"/><circle class="rt-dot" r="4.6"/></g><g class="rt-node is-lit is-cur" transform="translate(940 58)"><circle class="rt-ping" r="5"/><circle class="rt-dot" r="4.6"/></g></g><g class="rt-comet" aria-hidden="true"><ellipse class="rt-cglow" cx="0" cy="0" rx="22" ry="11" fill="url(#rtGlowG)"/><rect class="rt-cbody" x="-3.6" y="-3.6" width="7.2" height="7.2" rx="3.6" fill="#F5F6F1"/></g></svg><span class="rt-lbl is-above is-lit" style="left:6.00%;top:60.83%" aria-hidden="true"><b>United States</b><i>12.3%</i></span><span class="rt-lbl is-below is-lit" style="left:20.50%;top:75.83%" aria-hidden="true"><b>United Kingdom</b><i>7.2%</i></span><span class="rt-lbl is-above is-lit" style="left:35.00%;top:44.58%" aria-hidden="true"><b>France</b><i>6.0%</i></span><span class="rt-lbl is-below is-lit" style="left:50.00%;top:57.50%" aria-hidden="true"><b>Germany</b><i>15.7%</i></span><span class="rt-lbl is-above is-lit" style="left:64.50%;top:30.00%" aria-hidden="true"><b>Italy</b><i>7.2%</i></span><span class="rt-lbl is-below is-lit" style="left:79.00%;top:41.67%" aria-hidden="true"><b>South Korea</b><i>10.3%</i></span><span class="rt-lbl is-above is-lit is-cur" style="left:94.00%;top:12.08%" aria-hidden="true"><b>Japan</b><i>23.9%</i></span><span class="rt-reg" style="left:2.60%;width:6.80%" aria-hidden="true"><span>North America</span></span><span class="rt-reg" style="left:17.10%;width:50.80%" aria-hidden="true"><span>Europe</span></span><span class="rt-reg" style="left:75.60%;width:21.80%" aria-hidden="true"><span>East Asia</span></span><button class="rt-hit" type="button" data-i="0" style="left:6.00%;top:60.83%" aria-label="United States: 12.3% of viewers on “Shoot vs. Shot”, 1.78M views"></button><button class="rt-hit" type="button" data-i="1" style="left:20.50%;top:75.83%" aria-label="United Kingdom: 7.2% of viewers on the Dolomites Reel, 579K views"></button><button class="rt-hit" type="button" data-i="2" style="left:35.00%;top:44.58%" aria-label="France: 6.0% of viewers on the Dolomites Reel, 579K views"></button><button class="rt-hit" type="button" data-i="3" style="left:50.00%;top:57.50%" aria-label="Germany: 15.7% of viewers on the Dolomites Reel, 579K views"></button><button class="rt-hit" type="button" data-i="4" style="left:64.50%;top:30.00%" aria-label="Italy: 7.2% of viewers on the Venice Reel, 1.3M views"></button><button class="rt-hit" type="button" data-i="5" style="left:79.00%;top:41.67%" aria-label="South Korea: 10.3% of viewers on “Such a beautiful planet”, 194K views"></button><button class="rt-hit" type="button" data-i="6" style="left:94.00%;top:12.08%" aria-label="Japan: 23.9% of viewers on “Such a beautiful planet”, 194K views" aria-current="true"></button></div><div class="rt-map rt-v" data-segs='["M70 30", "C66 41.5 43.3 76 46 99", "C48.7 122 85.3 145 86 168", "C86.7 191 49.3 214 50 237", "C50.7 260 89.3 283 90 306", "C90.7 329 56 352 54 375", "C52 398 74 432.5 78 444"]' style="--ar:360/476"><svg class="rt-svg" viewBox="0 0 360 476" aria-hidden="true" focusable="false"><defs><radialGradient id="rtGlowG2"><stop offset="0" stop-color="#E6ECD3" stop-opacity=".75"/><stop offset=".45" stop-color="#CBD3B5" stop-opacity=".28"/><stop offset="1" stop-color="#CBD3B5" stop-opacity="0"/></radialGradient></defs><path class="rt-base" d="M70 30C66 41.5 43.3 76 46 99C48.7 122 85.3 145 86 168C86.7 191 49.3 214 50 237C50.7 260 89.3 283 90 306C90.7 329 56 352 54 375C52 398 74 432.5 78 444"/><path class="rt-glowline" d="M70 30C66 41.5 43.3 76 46 99C48.7 122 85.3 145 86 168C86.7 191 49.3 214 50 237C50.7 260 89.3 283 90 306C90.7 329 56 352 54 375C52 398 74 432.5 78 444"/><path class="rt-line" d="M70 30C66 41.5 43.3 76 46 99C48.7 122 85.3 145 86 168C86.7 191 49.3 214 50 237C50.7 260 89.3 283 90 306C90.7 329 56 352 54 375C52 398 74 432.5 78 444"/><g class="rt-nodes"><g class="rt-node is-lit" transform="translate(70 30)"><circle class="rt-ping" r="5"/><circle class="rt-dot" r="4.6"/></g><g class="rt-node is-lit" transform="translate(46 99)"><circle class="rt-ping" r="5"/><circle class="rt-dot" r="4.6"/></g><g class="rt-node is-lit" transform="translate(86 168)"><circle class="rt-ping" r="5"/><circle class="rt-dot" r="4.6"/></g><g class="rt-node is-lit" transform="translate(50 237)"><circle class="rt-ping" r="5"/><circle class="rt-dot" r="4.6"/></g><g class="rt-node is-lit" transform="translate(90 306)"><circle class="rt-ping" r="5"/><circle class="rt-dot" r="4.6"/></g><g class="rt-node is-lit" transform="translate(54 375)"><circle class="rt-ping" r="5"/><circle class="rt-dot" r="4.6"/></g><g class="rt-node is-lit is-cur" transform="translate(78 444)"><circle class="rt-ping" r="5"/><circle class="rt-dot" r="4.6"/></g></g><g class="rt-comet" aria-hidden="true"><ellipse class="rt-cglow" cx="0" cy="0" rx="22" ry="11" fill="url(#rtGlowG2)"/><rect class="rt-cbody" x="-3.6" y="-3.6" width="7.2" height="7.2" rx="3.6" fill="#F5F6F1"/></g></svg><span class="rt-lbl is-right is-lit" style="left:36.67%;top:6.30%" aria-hidden="true"><b>United States</b><i>12.3%</i></span><span class="rt-lbl is-right is-lit" style="left:36.67%;top:20.80%" aria-hidden="true"><b>United Kingdom</b><i>7.2%</i></span><span class="rt-lbl is-right is-lit" style="left:36.67%;top:35.29%" aria-hidden="true"><b>France</b><i>6.0%</i></span><span class="rt-lbl is-right is-lit" style="left:36.67%;top:49.79%" aria-hidden="true"><b>Germany</b><i>15.7%</i></span><span class="rt-lbl is-right is-lit" style="left:36.67%;top:64.29%" aria-hidden="true"><b>Italy</b><i>7.2%</i></span><span class="rt-lbl is-right is-lit" style="left:36.67%;top:78.78%" aria-hidden="true"><b>South Korea</b><i>10.3%</i></span><span class="rt-lbl is-right is-lit is-cur" style="left:36.67%;top:93.28%" aria-hidden="true"><b>Japan</b><i>23.9%</i></span><button class="rt-hit" type="button" data-i="0" style="left:19.44%;top:6.30%" aria-label="United States: 12.3% of viewers on “Shoot vs. Shot”, 1.78M views"></button><button class="rt-hit" type="button" data-i="1" style="left:12.78%;top:20.80%" aria-label="United Kingdom: 7.2% of viewers on the Dolomites Reel, 579K views"></button><button class="rt-hit" type="button" data-i="2" style="left:23.89%;top:35.29%" aria-label="France: 6.0% of viewers on the Dolomites Reel, 579K views"></button><button class="rt-hit" type="button" data-i="3" style="left:13.89%;top:49.79%" aria-label="Germany: 15.7% of viewers on the Dolomites Reel, 579K views"></button><button class="rt-hit" type="button" data-i="4" style="left:25.00%;top:64.29%" aria-label="Italy: 7.2% of viewers on the Venice Reel, 1.3M views"></button><button class="rt-hit" type="button" data-i="5" style="left:15.00%;top:78.78%" aria-label="South Korea: 10.3% of viewers on “Such a beautiful planet”, 194K views"></button><button class="rt-hit" type="button" data-i="6" style="left:21.67%;top:93.28%" aria-label="Japan: 23.9% of viewers on “Such a beautiful planet”, 194K views" aria-current="true"></button></div></div>
+        <div class="rt-foot">
+          <span class="rt-prog" aria-hidden="true"><i></i></span>
+          <p class="rt-src">Instagram Insights, Q3 2026</p>
+          <p class="rt-count" aria-hidden="true"><b>07</b> / 07</p>
+          <button class="rt-play" type="button" aria-label="Pause the route"><span class="i-pause"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="5.5" width="3.6" height="13" rx="1.2" fill="currentColor"/><rect x="13.4" y="5.5" width="3.6" height="13" rx="1.2" fill="currentColor"/></svg></span><span class="i-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 6.2v11.6a.9.9 0 0 0 1.37.77l9.2-5.8a.9.9 0 0 0 0-1.54l-9.2-5.8A.9.9 0 0 0 8.5 6.2z" fill="currentColor"/></svg></span></button>
+        </div>
+        <ul class="sr-only"><li>United States, 12.3% of viewers on <a href="https://www.instagram.com/reel/Db-t5PLMqCw/">“Shoot vs. Shot”</a>, 1.78M views</li><li>United Kingdom, 7.2% of viewers on the <a href="https://www.instagram.com/reel/Da2vIAtM8Ta/">Dolomites Reel</a>, 579K views</li><li>France, 6.0% of viewers on the <a href="https://www.instagram.com/reel/Da2vIAtM8Ta/">Dolomites Reel</a>, 579K views</li><li>Germany, 15.7% of viewers on the <a href="https://www.instagram.com/reel/Da2vIAtM8Ta/">Dolomites Reel</a>, 579K views</li><li>Italy, 7.2% of viewers on the <a href="https://www.instagram.com/reel/DbdOmmis3wy/">Venice Reel</a>, 1.3M views</li><li>South Korea, 10.3% of viewers on <a href="https://www.instagram.com/p/DbS74dgMI9I/">“Such a beautiful planet”</a>, 194K views</li><li>Japan, 23.9% of viewers on <a href="https://www.instagram.com/p/DbS74dgMI9I/">“Such a beautiful planet”</a>, 194K views</li></ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="verified" id="verified" aria-labelledby="ver-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="sec-title split" id="ver-title">Checked by<br>independent analytics</h2>
+      <p class="sec-note reveal">Third-party audits from HAFI (formerly HypeAuditor) and Heepsy, October 2026. Two separate tools, the same answer on audience quality.</p>
+    </div>
+    <div class="ver-grid stagger">
+      <div class="vcard"><div class="core">
+        <div class="viz"><div class="ring" role="img" aria-label="86% quality audience"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="52" fill="none" stroke="rgba(245,246,241,.12)" stroke-width="8"/><circle class="ring-val" cx="60" cy="60" r="52" fill="none" stroke="#F5F6F1" stroke-width="8" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="14" data-off="14"/></svg></div></div>
+        <p class="n"><span class="count" data-to="86" data-dec="0" data-suf="%">86%</span></p>
+        <p>quality audience (HAFI). Heepsy counts 85% real followers, and only 5.4% of accounts look suspicious.</p>
+      </div></div>
+      <div class="vcard"><div class="core">
+        <div class="viz"><div class="gbars bars-anim" role="img" aria-label="Follower growth in 12 months: this account 65%, similar accounts 15%">
+          <div class="gbar"><span>This account, +65%</span><span class="track"><span class="fill" style="--w:100%"></span></span></div>
+          <div class="gbar bench"><span>Similar-size accounts, +15%</span><span class="track"><span class="fill" style="--w:23.3%"></span></span></div>
+        </div></div>
+        <p class="n"><span class="count" data-to="4.3" data-dec="1" data-suf="×">4.3×</span></p>
+        <p>the benchmark: +65% follower growth in 12 months, against +15% for accounts of a similar size (HAFI).</p>
+      </div></div>
+      <div class="vcard"><div class="core">
+        <div class="viz"><div class="ring" role="img" aria-label="Account Health Score 77 out of 100"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="52" fill="none" stroke="rgba(245,246,241,.12)" stroke-width="8"/><circle class="ring-val" cx="60" cy="60" r="52" fill="none" stroke="#F5F6F1" stroke-width="8" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="23" data-off="23"/></svg></div></div>
+        <p class="n"><span class="count" data-to="77" data-dec="0">77</span><small>/100</small></p>
+        <p>Account Health Score, rated good. It combines audience quality, engagement and authenticity (HAFI).</p>
+      </div></div>
+      <div class="vcard"><div class="core">
+        <div class="viz"><div class="pct bars-anim" role="img" aria-label="Reactions per post higher than 84% of creators">
+          <div class="track"><span class="fill"></span><span class="mark"></span></div>
+          <div class="scale"><span>0</span><span>84th percentile</span><span>100</span></div>
+        </div></div>
+        <p class="n">Top 16%</p>
+        <p>for reactions per post: higher than 84% of creators (Heepsy).</p>
+      </div></div>
+    </div>
+    <div class="commenters reveal">
+      <p>Brands already in my comments, per HAFI’s notable commenters:</p>
+      <p class="names">Insta360, UGG, Furla, Boden, American Vintage, Miista</p>
     </div>
   </div>
 </section>
 
+<section class="records-sec" id="records" aria-labelledby="rec-title">
+  <div class="wrap">
+    <div class="records bezel reveal">
+      <div class="core">
+        <div class="records-head">
+          <div>
+            <p class="label">Records set this quarter</p>
+            <h2 class="serif" id="rec-title">Most of the account’s all-time creative records were reset between July and October.</h2>
+          </div>
+        </div>
+        <div class="rec-grid stagger">
+          <div class="rec"><p class="n"><span class="count" data-to="1.78" data-dec="2" data-suf="M">1.78M</span></p><p>views on one Reel, “Shoot vs. Shot”</p><a class="ln-arrow" href="https://www.instagram.com/reel/Db-t5PLMqCw/" target="_blank" rel="noopener">Watch the Reel<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a></div>
+          <div class="rec"><p class="n"><span class="count" data-to="22.9" data-dec="1" data-suf="%">22.9%</span></p><p>skip rate on my Dolomites Reel: 77% kept watching past the first three seconds</p><a class="ln-arrow" href="https://www.instagram.com/reel/Da2vIAtM8Ta/" target="_blank" rel="noopener">Watch the Reel<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a></div>
+          <div class="rec"><p class="n"><span class="count" data-to="86.2" data-dec="1" data-suf="%">86.2%</span></p><p>of a Reel’s views came from the Reels tab and Explore, where new audiences find you</p><a class="ln-arrow" href="https://www.instagram.com/p/DbS74dgMI9I/" target="_blank" rel="noopener">Watch the Reel<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a></div>
+          <div class="rec"><p class="n"><span class="count" data-to="23.1" data-dec="1" data-suf="K">23.1K</span></p><p>saves and 14.4K shares on the Venice Reel</p><a class="ln-arrow" href="https://www.instagram.com/reel/DbdOmmis3wy/" target="_blank" rel="noopener">Watch the Reel<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="contact" id="contact" aria-labelledby="con-title">
   <div class="wrap">
@@ -956,11 +932,14 @@ html.js:not(.ready) [data-intro]{visibility:hidden}
             <p class="mail-addr" id="email-text">ansyvaart@gmail.com</p>
             <div class="mail-actions">
               <button class="btn btn-light magnetic" type="button" data-copy="ansyvaart@gmail.com"><span class="btn-label">Copy email</span><span class="ic"><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="11" height="11" rx="2.5"/><path d="M5 15V6.5A1.5 1.5 0 0 1 6.5 5H15"/></svg></span></button>
+            </div>
+            <div class="mail-actions">
               <a class="btn btn-ghost magnetic" href="https://www.instagram.com/ansyva/" target="_blank" rel="noopener">instagram.com/ansyva<span class="ic"><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
+              <a class="btn btn-ghost magnetic" href="https://www.tiktok.com/@ansyva" target="_blank" rel="noopener">tiktok.com/@ansyva<span class="ic"><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
             </div>
             <p class="contact-note" role="status" aria-live="polite" id="copy-status"></p>
           </div>
-          <p class="contact-note">EU-based. Available for travel worldwide. Working in English.</p>
+          <p class="contact-note">EU-based. Working in English.</p>
         </div>
         <figure class="contact-photo"><img class="reveal-img" src="img/p14.jpg" width="1000" height="1250" loading="lazy" decoding="async" alt="Anastasiia in a blue plaid dress, holding a white flower"></figure>
       </div>
@@ -1444,7 +1423,7 @@ html.js:not(.ready) [data-intro]{visibility:hidden}
       fs = parseFloat(getComputedStyle(h1).fontSize); U = 100 / Bpx; emU = fs * U; k = WH * emU / 100;
       var bcx = br.left + Bpx / 2, bcy = br.top + Bpx / 2, base = probe.getBoundingClientRect().top;
       P = PERCH.map(function(p){
-        var m = masks[p[0]], left = m ? m.getBoundingClientRect().left + 0.02 * fs : chars[p[0]].getBoundingClientRect().left;
+        var m = masks[p[0]], left = m ? m.getBoundingClientRect().left + 0.16 * fs : chars[p[0]].getBoundingClientRect().left;
         return { x: (left + p[1] * fs - bcx) * U, y: (base - p[2] * fs - bcy) * U - TIP * k };
       });
       GR = { x: 0, y: (base - bcy) * U - TIP * k };
@@ -1676,16 +1655,6 @@ html.js:not(.ready) [data-intro]{visibility:hidden}
     });
     document.querySelectorAll('.ring-val').forEach(function(c){
       whenEnter(c.closest('.ring'), function(){ G.fromTo(c, { attr: { 'stroke-dashoffset': 100 } }, { attr: { 'stroke-dashoffset': parseFloat(c.dataset.off) }, duration: 1.8, ease: 'expo.out' }); });
-    });
-
-    /* Active audience core: the marks fill like a battery, one per percent */
-    document.querySelectorAll('.ticks').forEach(function(tk){
-      if (inView(tk)) return;
-      var fill = tk.querySelectorAll('.tk-row .a, .tk-row .b');
-      G.set(fill, { scaleY: 0.1, opacity: 0.2 });
-      ST.create({ trigger: tk, start: 'top 86%', once: true, onEnter: function(){
-        G.to(fill, { scaleY: 1, opacity: 1, duration: 0.5, stagger: 0.017, ease: 'expo.out' });
-      } });
     });
 
     /* Images open from a slit */
